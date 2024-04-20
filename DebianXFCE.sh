@@ -3,6 +3,9 @@
 # Debian with XFCE (installed from live installer)
 # ================================================
 #
+# Make sure root account is activated during install
+#
+#
 # XFCE Musthaves:
 # ===============
 # Network File Tools/System Events
@@ -12,7 +15,7 @@ sudo apt install -y dialog mtools acpi acpid gvfs-backends
 # Essentials:
 # ===========
 #
-sudo apt install -y neovim rsync curl git pandoc zsh ranger gparted openssh-server bpytop neofetch kdeconnect mpv ffmpeg samba gnome-disk-utility gimp hunspell-en-ca plank kate scrot i3lock exa
+sudo apt install -y nala neovim rsync curl git pandoc zsh ranger gparted openssh-server bpytop neofetch kdeconnect mpv ffmpeg samba gnome-disk-utility gimp hunspell-en-ca plank kate scrot i3lock exa
 #
 # EXA installation (a better version of ls) replace ls command in .zshrc file with line below
 # alias ls='exa --color=always --group-directories-first' 
@@ -23,7 +26,7 @@ sudo apt install -y exa
 sudo apt install -y cups bluez blueman
 #
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-liberation2 fonts-liberation fonts-terminus fonts-sil-gentium fonts-firacode
+sudo apt install -y fonts-font-awesome fonts-powerline fonts-liberation2 fonts-liberation fonts-terminus fonts-sil-gentium fonts-firacode
 #
 # Install Greeter GUI
 sudo apt install -y lightdm-gtk-greeter-settings
@@ -37,7 +40,7 @@ flatpak install Brave Chromium Chrome Bitwarden Flatseal Zoom
 #
 # Latex:
 # ======
-sudo apt install -y texlive-full texlive-lang-all texlive-luatex texlive-xetex texlive-fonts-extra
+# sudo apt install -y texlive-full texlive-lang-all texlive-luatex texlive-xetex texlive-fonts-extra
 
 # Other Sources:
 # ==============
@@ -55,7 +58,7 @@ sudo apt install -y arc-theme papirus-icon-theme breeze-cursor-theme kde-style-b
 #
 # Ham Radio:
 # ==========
-sudo apt install flrig fldigi wsjtx wsjtx-data wsjtx-doc js8call ax25-apps ax25-tools ax25mail-utils libax25 libax25-dev talkd
+sudo apt install -y flrig fldigi wsjtx wsjtx-data wsjtx-doc js8call ax25-apps ax25-tools ax25mail-utils libax25 libax25-dev talkd
 #
 # *Get GridTracker*: curl https://debian.gridtracker.org/gridtracker_deb_install.sh | sudo bash
 #
@@ -76,3 +79,5 @@ sudo apt install flrig fldigi wsjtx wsjtx-data wsjtx-doc js8call ax25-apps ax25-
 #
 # *Add user to the dialout group*
 # sudo usermod -G dialout jason
+# *Add user to sudoers*
+# sudo adduser jason sudo
