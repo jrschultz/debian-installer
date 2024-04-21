@@ -15,7 +15,7 @@ sudo apt install -y dialog mtools acpi acpid gvfs-backends
 # Essentials:
 # ===========
 #
-sudo apt install -y nala neovim rsync curl git pandoc zsh ranger gparted openssh-server bpytop neofetch kdeconnect mpv ffmpeg samba gnome-disk-utility gimp hunspell-en-ca plank kate scrot i3lock exa
+sudo apt install -y nala neovim rsync curl git pandoc zsh ranger gparted openssh-server bpytop neofetch kdeconnect mpv ffmpeg samba gnome-disk-utility gimp hunspell-en-ca plank kate scrot i3lock exa evince
 #
 # EXA installation (a better version of ls) replace ls command in .zshrc file with line below
 # alias ls='exa --color=always --group-directories-first' 
