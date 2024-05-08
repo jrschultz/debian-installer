@@ -94,6 +94,6 @@ sudo apt install -y flrig fldigi wsjtx wsjtx-data wsjtx-doc js8call ax25-apps ax
 # sudo nvim /etc/default/grub && sudo update-grub
 #
 # *Add user to the dialout group*
-# sudo usermod -G dialout jason
+# sudo usermod -aG dialout jason
 # *Add user to sudoers*
 # sudo adduser jason sudo
